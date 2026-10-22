@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe | Players</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="setup.js" defer></script>
+</head>
+<body>
+    <main class="page">
+        <h1>Tic-Tac-Toe</h1>
+        <p class="subtitle">Two players. One winner. Let the game begin!</p>
+
+        <section class="panel">
+            <h2>Who's Playing?</h2>
+
+            <form id="player-form">
+                <label for="player1">Player 1 — O</label>
+                <input
+                    id="player1"
+                    type="text"
+                    placeholder="Enter first player's name"
+                    maxlength="24"
+                    required
+                >
+
+                <label for="player2">Player 2 — X</label>
+                <input
+                    id="player2"
+                    type="text"
+                    placeholder="Enter second player's name"
+                    maxlength="24"
+                    required
+                >
+
+                <p id="form-error" class="error" role="alert"></p>
+
+                <button type="submit" class="primary-btn">
+                    Start Game →
+                </button>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h2>🏆 Leaderboard</h2>
+            <p class="subtitle">Your saved player records</p>
+
+            <div id="leaderboard"></div>
+
+            <button id="clear-scores" class="secondary-btn" type="button">
+                Reset All Scores
+            </button>
+        </section>
+    </main>
+</body>
+</html>

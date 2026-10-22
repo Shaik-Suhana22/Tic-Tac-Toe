@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe | Play</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="page">
+        <h1>Tic-Tac-Toe</h1>
+        <p class="subtitle">Challenge your opponent!</p>
+
+        <section class="player-cards">
+            <div class="player-card" id="player1-card">
+                <span class="symbol">O</span>
+                <h2 id="player1-name">Player 1</h2>
+                <p class="score" id="player1-score"></p>
+            </div>
+
+            <div class="player-card" id="player2-card">
+                <span class="symbol">X</span>
+                <h2 id="player2-name">Player 2</h2>
+                <p class="score" id="player2-score"></p>
+            </div>
+        </section>
+
+        <section class="panel">
+            <p class="status" id="status" aria-live="polite">
+                Loading game...
+            </p>
+
+            <div class="game" id="game-board">
+                <button class="box" aria-label="Top left"></button>
+                <button class="box" aria-label="Top middle"></button>
+                <button class="box" aria-label="Top right"></button>
+                <button class="box" aria-label="Middle left"></button>
+                <button class="box" aria-label="Center"></button>
+                <button class="box" aria-label="Middle right"></button>
+                <button class="box" aria-label="Bottom left"></button>
+                <button class="box" aria-label="Bottom middle"></button>
+                <button class="box" aria-label="Bottom right"></button>
+            </div>
+
+            <div class="actions">
+                <button class="primary-btn" id="new-round">
+                    Play Again
+                </button>
+                <button class="secondary-btn" id="change-players">
+                    Change Players
+                </button>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>🏆 Player Scores</h2>
+            <div id="match-scores"></div>
+        </section>
+    </main>
+</body>
+</html>
